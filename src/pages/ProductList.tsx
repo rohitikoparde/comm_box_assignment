@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getProducts, type Product } from "../api/products.api";
+import { type Product } from "../api/products.api";
 import ProductCard from "../components/ProductCard";
 
 const LIMIT = 8;
@@ -65,8 +65,6 @@ export default function ProductList() {
        setTotal(data.length);
      });
  }, [skip, debouncedQuery, sortBy, order, selectedCategory]);
-
-
 
   return (
     <div className="max-w-[1320px] mx-auto px-6 py-10">
