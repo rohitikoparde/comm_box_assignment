@@ -1,0 +1,36 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+
+/* Tailwind v4 */
+@import "tailwindcss";
+
+/* Full height layout */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* Theme tokens */
+@theme {
+  --font-sans: "Arimo", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+/* Animations */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 12s linear infinite;
+}
